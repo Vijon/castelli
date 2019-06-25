@@ -1,0 +1,37 @@
+{
+  "name": "castelli-bot",
+  "version": "1.0.0",
+  "description": "A bot that can crawl castelli",
+  "main": "bot.js",
+  "dependencies": {
+    "firebase-admin": "^5.2.1",
+    "jsdom": "^11.2.0",
+    "proj4": "^2.4.4",
+    "slug": "^0.9.1",
+    "typescript": "^2.5.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^20.0.8",
+    "jest": "^21.1.0",
+    "ts-jest": "^21.0.1"
+  },
+  "scripts": {
+    "dev": "nodemon --exec ts-node bot.ts",
+    "test": "jest"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json"
+    ]
+  },
+  "author": "Mauro Casolaro",
+  "license": "ISC"
+}

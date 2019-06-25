@@ -1,0 +1,1 @@
+Put here serviceAccountKey.json from FIREBASE
