@@ -34,11 +34,7 @@ class Navbar extends React.Component<Props, null> {
     public static defaultProps: Props = {
         level: 0,
         filters: true
-    };     
-    
-    constructor() {
-        super();
-    }
+    };
 
     componentWillMount() {
     }

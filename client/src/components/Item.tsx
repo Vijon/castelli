@@ -33,10 +33,6 @@ const $ = Object.assign( {}, styles, {
 });
 
 class Item extends React.Component<Props, null> {
-    
-    constructor() {
-        super();
-    }
 
     componentWillMount() {
     }

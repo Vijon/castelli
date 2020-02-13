@@ -59,10 +59,6 @@ const $ = Object.assign( {}, styles, {
 })
 
 class Details extends React.Component<Props, null> {
-    
-    constructor() {
-        super();
-    }
 
     _init() {
         if (!this.props.item || !this.props.item.id) return;

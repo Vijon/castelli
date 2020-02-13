@@ -20,10 +20,6 @@ const $ = Object.assign( {}, styles, {
 });
 
 class List extends React.Component<Props, null> {
-    constructor() {
-        super();
-    }
-    
     _init() {
         this.props.onInit( );
     }

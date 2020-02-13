@@ -12,10 +12,6 @@ interface Props {
 
 var timeout: boolean = false;
 class Splash extends React.Component<Props, null> {
-    constructor() {
-        super();
-    }
-
     componentWillMount() {
         setTimeout( () => {
             timeout = true;

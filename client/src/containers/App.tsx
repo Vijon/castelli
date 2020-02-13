@@ -27,6 +27,6 @@ const mapDispatchToProps = (dispatch: Function) => {
     };
 }
 
-const container = withRouter(connect(mapStateToProps, mapDispatchToProps, mergeProps)(App));
+const container = withRouter(connect(mapStateToProps, mapDispatchToProps, mergeProps)(App) as any);
 
 export default container;

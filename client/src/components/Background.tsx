@@ -11,11 +11,7 @@ interface Props {
 class Background extends React.Component<Props, null> {
     public static defaultProps: Props = {
         image: './styles/images/bg.png'
-    };     
-    
-    constructor() {
-        super();
-    }
+    };
 
     componentWillMount() {
     }

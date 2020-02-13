@@ -28,10 +28,6 @@ const $ = Object.assign( {}, styles, {
 })
 
 class Updater extends React.Component<Props, null> {
-    constructor() {
-        super();
-    }
-
     componentWillMount() {
     }
 

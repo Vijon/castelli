@@ -26,7 +26,7 @@ interface Props {
 }
 
 // I know it's in a component, it would stay in a container... :(
-const ConnectedSwitch = connect(state => ({
+const ConnectedSwitch = connect((state: any) => ({
 	location: state.location
 }), {}, (stateProps: Object, dispatchProps: Object, ownProps: Object) => {
     return Object.assign({}, ownProps, stateProps, dispatchProps);
