@@ -12,7 +12,7 @@ RUN npm install --global serve
 COPY ./package*.json ./
 
 # Install dependencies
-RUN npm install --production
+RUN npm install
 
 # Copy all files
 COPY ./ ./
@@ -21,4 +21,4 @@ COPY ./ ./
 RUN npm run build
 
 # Run npm start script with PM2 when container starts
-CMD [ "npx", "serve", "build", "-s", "--listen", "80" ]
+CMD [ "npx", "serve", "build", "--listen", "80" ]
