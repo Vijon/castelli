@@ -62,7 +62,7 @@ class Details extends React.Component<Props, null> {
 
     _init() {
         if (!this.props.item || !this.props.item.id) return;
-        this.props.onInit( this.props.item );
+        if (this.props.onInit) { this.props.onInit( this.props.item ); }
     }
 
     componentDidMount() {

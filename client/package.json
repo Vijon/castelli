@@ -2,7 +2,7 @@
   "name": "castelli",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://lab.vijon.it/",
+  "homepage": "https://github.com/Vijon/castelli",
   "dependencies": {
     "firebase": "^4.4.0",
     "history": "^4.7.2",

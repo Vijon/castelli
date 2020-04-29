@@ -21,7 +21,7 @@ const $ = Object.assign( {}, styles, {
 
 class List extends React.Component<Props, null> {
     _init() {
-        this.props.onInit( );
+        if (this.props.onInit) { this.props.onInit( ); }
     }
 
     componentWillMount() {
@@ -30,12 +30,14 @@ class List extends React.Component<Props, null> {
 
     onPressMore() {
         return () => {
-            this.props.onSetPage( this.props.page+1 );
+            if (this.props.onSetPage) {
+                this.props.onSetPage( this.props.page+1 );
+            }
         }
     }
 
     render() {
-        const items = Array.from(this.props.items.values()).slice(0, CONFIG.ui.ipp * this.props.page);
+        const items = Array.from(this.props.items.values()).slice(0, CONFIG.ui.ipp * (this.props.page || 1));
         const maxpages = Math.ceil(this.props.items.size / CONFIG.ui.ipp);
         return (
             <$.panel>
