@@ -1,7 +1,7 @@
 # Emilia-Romagna (North Italy) castles #
 
 - [Use app](https://castelli.vijon.it/)
-- [Storybook](http://castelli.vijon.it:2001)
+- [Storybook](https://castelli.vijon.it:2001)
 
 ## Overview ##
 
@@ -17,7 +17,7 @@ The main feature of this micro-application is that it can work totally offline. 
 # Castelli dell'Emilia-Romagna #
 
 - [Vai all'app](https://castelli.vijon.it/)
-- [Storybook](http://castelli.vijon.it:2001)
+- [Storybook](https://castelli.vijon.it:2001)
 
 ## Panoramica ##
 
